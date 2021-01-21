@@ -1,0 +1,21 @@
+:root {
+    --body:#e9ecef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    background-color:var(--body);
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+#typer-title {
+    letter-spacing: .2rem;
+}

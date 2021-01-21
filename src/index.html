@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typer Game</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body id="main" >
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 pt-5">
+              <h1 class="offset-md-2">Typer Game</h1>
+
+              <div class="row justify-content-center mt-3">
+                  <div class="col-md-8 card py-4">
+                      <div class="card-body">
+                          <div class="card-title">
+                              <h5>Frase: </h5>
+                              <p class="text-center" id="typer-title"></p>
+                          </div>
+                          <div class="mb-3 mt-4 input-group input-group-lg">
+                              <input 
+                                class="form-control border"
+                                aria-label="Sizing example input" 
+                                aria-describedby="inputGroup-sizing-lg"
+                                id="typer-input" 
+                                maxlength="50" 
+                                onkeyup="alterarCaracteresInseridos()"
+                              >
+
+                              <span class="input-group-text" id="typer-span">
+                                  <div id="typed-chars"></div>
+                                  <div id="phrase-chars"></div>
+                              </span>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-sm-8 offset-md-2">
+                                <div class="text-center alert" role="alert" id="typer-alert"></div>
+                              </div>
+                          </div>
+          
+                          <div class="row mt-2">
+                              <div class="col-sm-6 offset-md-2"><h5 id="timer"></h5></div>
+                              <div class="col-sm-4">
+                                  <button type="button" class="btn btn-outline-primary" onclick="setup()">
+                                      <i class="fas fa-play"></i>INICIAR
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2e8d75087f.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" crossorigin="anonymous"></script>
+</body>
+</html>
